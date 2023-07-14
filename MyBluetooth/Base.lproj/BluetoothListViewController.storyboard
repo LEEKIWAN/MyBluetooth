@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CZu-ma-iKa">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bluetooth List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BluetoothListViewController" customModule="MyBluetooth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cI0-24-aTE">
+                                <rect key="frame" x="0.0" y="199" width="393" height="570"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5iV-zQ-8ey"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RZf-6e-xkG"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJb-CZ-bI8">
+                                <rect key="frame" x="0.0" y="59" width="393" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9s-j3-0vU" customClass="NVActivityIndicatorView" customModule="MyBluetooth" customModuleProvider="target">
+                                        <rect key="frame" x="156.66666666666666" y="15" width="80" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="0nb-Jv-efu"/>
+                                            <constraint firstAttribute="width" secondItem="t9s-j3-0vU" secondAttribute="height" id="Mis-yj-vKA"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rF-f2-9HV">
+                                        <rect key="frame" x="30" y="105" width="333" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="0ja-DJ-uF4"/>
+                                    <constraint firstItem="0rF-f2-9HV" firstAttribute="centerX" secondItem="kJb-CZ-bI8" secondAttribute="centerX" id="2Tt-E4-sGx"/>
+                                    <constraint firstAttribute="trailing" secondItem="0rF-f2-9HV" secondAttribute="trailing" constant="30" id="64M-9a-NsU"/>
+                                    <constraint firstItem="t9s-j3-0vU" firstAttribute="centerY" secondItem="kJb-CZ-bI8" secondAttribute="centerY" constant="-15" id="CNa-q4-Brw"/>
+                                    <constraint firstItem="0rF-f2-9HV" firstAttribute="top" secondItem="t9s-j3-0vU" secondAttribute="bottom" constant="10" id="HN0-CY-mge"/>
+                                    <constraint firstItem="t9s-j3-0vU" firstAttribute="centerX" secondItem="kJb-CZ-bI8" secondAttribute="centerX" id="xpX-jE-WIm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cI0-24-aTE" secondAttribute="trailing" id="3nA-h1-Bkh"/>
+                            <constraint firstItem="cI0-24-aTE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7sE-oq-Nx0"/>
+                            <constraint firstItem="cI0-24-aTE" firstAttribute="top" secondItem="kJb-CZ-bI8" secondAttribute="bottom" id="BbQ-aT-bRA"/>
+                            <constraint firstItem="kJb-CZ-bI8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="R4G-LN-qub"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cI0-24-aTE" secondAttribute="bottom" id="SqI-va-KCV"/>
+                            <constraint firstItem="kJb-CZ-bI8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xec-AL-jkW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kJb-CZ-bI8" secondAttribute="trailing" id="v5b-lz-0mc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pJv-PA-4I6"/>
+                    <connections>
+                        <outlet property="indicatorView" destination="t9s-j3-0vU" id="WyU-ss-uvj"/>
+                        <outlet property="tableView" destination="cI0-24-aTE" id="sEi-yP-Jki"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="3.5211267605633805"/>
+        </scene>
+        <!--Scanned-->
+        <scene sceneID="3aK-gc-uS8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="CZu-ma-iKa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Scanned" image="list.bullet" catalog="system" id="agD-1E-gB5">
+                        <color key="badgeColor" name="Contents"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ijx-to-JwX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YDv-er-nXF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wge-C7-9o7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.95419847328243" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <namedColor name="Contents">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="0.95300000905990601" green="0.9570000171661377" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
