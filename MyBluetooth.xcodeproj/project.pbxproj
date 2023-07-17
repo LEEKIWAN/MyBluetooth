@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831ED1212A614CE5006A1D89 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831ED1202A614CE5006A1D89 /* AppUtils.swift */; };
+		83503C0C2A64DFA900769970 /* MTCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83503C0B2A64DFA900769970 /* MTCircularSlider.swift */; };
 		836001782A5FD24F0007F277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836001772A5FD24F0007F277 /* AppDelegate.swift */; };
 		8360017A2A5FD24F0007F277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836001792A5FD24F0007F277 /* SceneDelegate.swift */; };
 		8360017C2A5FD24F0007F277 /* BluetoothListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360017B2A5FD24F0007F277 /* BluetoothListViewController.swift */; };
@@ -70,9 +72,13 @@
 		8376FEF12A610BAB00BB90A3 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376FEF02A610BAB00BB90A3 /* Date+.swift */; };
 		8376FEF32A6126EF00BB90A3 /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376FEF22A6126EF00BB90A3 /* DeviceDetailViewController.swift */; };
 		8376FEF52A6126F300BB90A3 /* DeviceDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8376FEF42A6126F300BB90A3 /* DeviceDetailViewController.storyboard */; };
+		839032432A613AFA00F5F5AE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839032422A613AFA00F5F5AE /* Coordinator.swift */; };
+		839032452A613BCB00F5F5AE /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839032442A613BCB00F5F5AE /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831ED1202A614CE5006A1D89 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		83503C0B2A64DFA900769970 /* MTCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTCircularSlider.swift; sourceTree = "<group>"; };
 		836001742A5FD24F0007F277 /* MyBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836001772A5FD24F0007F277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836001792A5FD24F0007F277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +143,8 @@
 		8376FEF02A610BAB00BB90A3 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		8376FEF22A6126EF00BB90A3 /* DeviceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewController.swift; sourceTree = "<group>"; };
 		8376FEF42A6126F300BB90A3 /* DeviceDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceDetailViewController.storyboard; sourceTree = "<group>"; };
+		839032422A613AFA00F5F5AE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		839032442A613BCB00F5F5AE /* UIViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831ED11E2A6148A0006A1D89 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8360017D2A5FD24F0007F277 /* BluetoothListViewController.storyboard */,
+				8360017B2A5FD24F0007F277 /* BluetoothListViewController.swift */,
+				8376FEEA2A60EB8000BB90A3 /* RegisteredDeviceListViewController.storyboard */,
+				8376FEE82A60EB7900BB90A3 /* RegisteredDeviceListViewController.swift */,
+				8376FEF42A6126F300BB90A3 /* DeviceDetailViewController.storyboard */,
+				8376FEF22A6126EF00BB90A3 /* DeviceDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		831ED11F2A6148B2006A1D89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				836001A62A5FF4CD0007F277 /* DeviceTableViewCell.xib */,
+				836001A52A5FF4CD0007F277 /* DeviceTableViewCell.swift */,
+				8376FEED2A60F8D600BB90A3 /* RegisteredDeviceTableViewCell.xib */,
+				8376FEEC2A60F8D600BB90A3 /* RegisteredDeviceTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83503C0A2A64DFA000769970 /* MTCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				83503C0B2A64DFA900769970 /* MTCircularSlider.swift */,
+			);
+			path = MTCircularSlider;
+			sourceTree = "<group>";
+		};
 		8360016B2A5FD24F0007F277 = {
 			isa = PBXGroup;
 			children = (
@@ -176,18 +216,10 @@
 				836001A02A5FEFFD0007F277 /* Extensions */,
 				836001912A5FEBC10007F277 /* Model */,
 				8360018E2A5FE7F30007F277 /* Mangers */,
+				831ED11E2A6148A0006A1D89 /* ViewControllers */,
+				831ED11F2A6148B2006A1D89 /* Views */,
 				8360019C2A5FEE500007F277 /* TabBarController.storyboard */,
 				8360019E2A5FEE550007F277 /* TabBarController.swift */,
-				8360017D2A5FD24F0007F277 /* BluetoothListViewController.storyboard */,
-				8360017B2A5FD24F0007F277 /* BluetoothListViewController.swift */,
-				8376FEEA2A60EB8000BB90A3 /* RegisteredDeviceListViewController.storyboard */,
-				8376FEE82A60EB7900BB90A3 /* RegisteredDeviceListViewController.swift */,
-				836001A62A5FF4CD0007F277 /* DeviceTableViewCell.xib */,
-				836001A52A5FF4CD0007F277 /* DeviceTableViewCell.swift */,
-				8376FEED2A60F8D600BB90A3 /* RegisteredDeviceTableViewCell.xib */,
-				8376FEEC2A60F8D600BB90A3 /* RegisteredDeviceTableViewCell.swift */,
-				8376FEF42A6126F300BB90A3 /* DeviceDetailViewController.storyboard */,
-				8376FEF22A6126EF00BB90A3 /* DeviceDetailViewController.swift */,
 				836001802A5FD2510007F277 /* Assets.xcassets */,
 				836001822A5FD2510007F277 /* LaunchScreen.storyboard */,
 				836001852A5FD2510007F277 /* Info.plist */,
@@ -219,6 +251,7 @@
 				8360018B2A5FD4E80007F277 /* UIColor+.swift */,
 				8376FEF02A610BAB00BB90A3 /* Date+.swift */,
 				836001A12A5FF0060007F277 /* UIApplication+.swift */,
+				839032442A613BCB00F5F5AE /* UIViewController+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,6 +330,8 @@
 			isa = PBXGroup;
 			children = (
 				8376FEE72A60E97000BB90A3 /* Library */,
+				839032422A613AFA00F5F5AE /* Coordinator.swift */,
+				831ED1202A614CE5006A1D89 /* AppUtils.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -304,6 +339,7 @@
 		8376FEE72A60E97000BB90A3 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				83503C0A2A64DFA000769970 /* MTCircularSlider */,
 				8376FE942A60E96A00BB90A3 /* NVActivityIndicatorView */,
 			);
 			path = Library;
@@ -391,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83503C0C2A64DFA900769970 /* MTCircularSlider.swift in Sources */,
 				8376FEDC2A60E96A00BB90A3 /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
 				8376FED32A60E96A00BB90A3 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */,
 				8376FEC52A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
@@ -403,11 +440,13 @@
 				8376FEC72A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
 				8376FEDF2A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
 				8376FEE52A60E96A00BB90A3 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
+				831ED1212A614CE5006A1D89 /* AppUtils.swift in Sources */,
 				836001A72A5FF4CD0007F277 /* DeviceTableViewCell.swift in Sources */,
 				8376FECD2A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
 				8376FEDD2A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
 				8376FED52A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */,
 				8376FEDE2A60E96A00BB90A3 /* NVActivityIndicatorAnimationPacman.swift in Sources */,
+				839032432A613AFA00F5F5AE /* Coordinator.swift in Sources */,
 				8360019F2A5FEE550007F277 /* TabBarController.swift in Sources */,
 				8376FED02A60E96A00BB90A3 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
 				8376FEBF2A60E96A00BB90A3 /* NVActivityIndicatorPresenter.swift in Sources */,
@@ -432,6 +471,7 @@
 				8376FECF2A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
 				8376FEDB2A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
 				8376FEE32A60E96A00BB90A3 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				839032452A613BCB00F5F5AE /* UIViewController+.swift in Sources */,
 				8376FEC62A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
 				836001932A5FEBCC0007F277 /* Device.swift in Sources */,
 				8376FEE22A60E96A00BB90A3 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,

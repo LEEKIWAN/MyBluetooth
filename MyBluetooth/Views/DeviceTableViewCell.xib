@@ -41,7 +41,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqA-ln-kbm">
-                                <rect key="frame" x="60" y="16.666666666666668" width="213" height="15.666666666666668"/>
+                                <rect key="frame" x="60" y="16.666666666666668" width="223" height="15.666666666666668"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                 <color key="textColor" name="White700"/>
                                 <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="760-Wj-YAF">
-                                <rect key="frame" x="283" y="8.6666666666666643" width="80" height="50"/>
+                                <rect key="frame" x="293" y="8.6666666666666643" width="70" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRj-cX-Tek">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
@@ -70,11 +70,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjB-2K-6d2">
-                                        <rect key="frame" x="40" y="0.0" width="40" height="50"/>
+                                        <rect key="frame" x="40" y="0.0" width="30" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="01Q-2k-I7q"/>
+                                            <constraint firstAttribute="width" constant="30" id="01Q-2k-I7q"/>
                                         </constraints>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="7" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal">
                                             <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>

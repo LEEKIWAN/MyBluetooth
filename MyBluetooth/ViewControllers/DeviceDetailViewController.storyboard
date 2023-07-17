@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Device Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="DeviceDetailViewController" customModule="MyBluetooth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbn-OF-U58">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhN-qh-Th5">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="XOG-8A-CBe"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Black700"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="arrow.backward" catalog="system"/>
+                                        <connections>
+                                            <action selector="onBackTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4nG-AR-Kqh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXD-21-uAV">
+                                        <rect key="frame" x="60" y="8" width="273" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQI-Nf-dyJ">
+                                        <rect key="frame" x="60" y="28.333333333333332" width="273" height="15.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mhN-qh-Th5" firstAttribute="top" secondItem="hbn-OF-U58" secondAttribute="top" id="7Uc-WF-TWm"/>
+                                    <constraint firstAttribute="height" constant="50" id="9tO-D3-63c"/>
+                                    <constraint firstItem="wXD-21-uAV" firstAttribute="leading" secondItem="mhN-qh-Th5" secondAttribute="trailing" id="9w6-lJ-1Qj"/>
+                                    <constraint firstItem="wXD-21-uAV" firstAttribute="top" secondItem="hbn-OF-U58" secondAttribute="top" constant="8" id="BBS-g4-a12"/>
+                                    <constraint firstItem="mhN-qh-Th5" firstAttribute="leading" secondItem="hbn-OF-U58" secondAttribute="leading" id="DtG-Zs-AwB"/>
+                                    <constraint firstItem="wXD-21-uAV" firstAttribute="centerX" secondItem="hbn-OF-U58" secondAttribute="centerX" id="JCY-xb-NyC"/>
+                                    <constraint firstAttribute="bottom" secondItem="mhN-qh-Th5" secondAttribute="bottom" id="NpG-g9-416"/>
+                                    <constraint firstAttribute="bottom" secondItem="nQI-Nf-dyJ" secondAttribute="bottom" constant="6" id="XJV-3u-y4m"/>
+                                    <constraint firstItem="nQI-Nf-dyJ" firstAttribute="centerX" secondItem="hbn-OF-U58" secondAttribute="centerX" id="oX1-Mg-j0v"/>
+                                    <constraint firstItem="nQI-Nf-dyJ" firstAttribute="leading" secondItem="mhN-qh-Th5" secondAttribute="trailing" id="rwl-rU-O0g"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1g-aj-254" customClass="MTCircularSlider" customModule="MyBluetooth" customModuleProvider="target">
+                                <rect key="frame" x="58.666666666666657" y="288" width="275.66666666666674" height="276"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="areTrackCapsRound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasThumb" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbShadowDepth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbTint">
+                                        <color key="value" name="Success"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbBorderColor">
+                                        <color key="value" name="Error"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="minTrackTint">
+                                        <color key="value" name="Black700"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="maxTrackTint">
+                                        <color key="value" systemColor="systemMintColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-76-F7X" customClass="NVActivityIndicatorView" customModule="MyBluetooth" customModuleProvider="target">
+                                <rect key="frame" x="78.666666666666671" y="308" width="235.66666666666663" height="236"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="t3l-76-F7X" secondAttribute="height" id="1gt-gQ-Q2I"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TxS-uQ-JCc">
+                                <rect key="frame" x="164.33333333333334" y="395" width="64.333333333333343" height="62.333333333333314"/>
+                                <color key="backgroundColor" name="White700"/>
+                                <imageReference key="image" image="iphone.gen1.radiowaves.left.and.right.circle" catalog="system" renderingMode="hierarchical">
+                                    <hierarchicalColors>
+                                        <color systemColor="labelColor"/>
+                                        <color systemColor="secondaryLabelColor"/>
+                                        <color systemColor="tertiaryLabelColor"/>
+                                    </hierarchicalColors>
+                                </imageReference>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="55"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="근처에 있어!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lN-Rc-1fh">
+                                <rect key="frame" x="20" y="149" width="353" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" name="Black700"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여기 어딘가에 있어. 인접한 지역을 검색하십시오." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xR-Gz-qUx">
+                                <rect key="frame" x="20" y="184.33333333333334" width="353" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="Black700"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t3l-76-F7X" firstAttribute="bottom" secondItem="Q1g-aj-254" secondAttribute="bottom" constant="-20" id="5qK-6w-YIX"/>
+                            <constraint firstItem="4lN-Rc-1fh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Chn-bT-YBh"/>
+                            <constraint firstItem="t3l-76-F7X" firstAttribute="top" secondItem="Q1g-aj-254" secondAttribute="top" constant="20" id="E6K-6g-hrf"/>
+                            <constraint firstItem="6xR-Gz-qUx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="KAz-U2-G3r"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6xR-Gz-qUx" secondAttribute="trailing" constant="20" id="LXc-lP-NpY"/>
+                            <constraint firstItem="t3l-76-F7X" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.6" id="Mfw-qB-qHZ"/>
+                            <constraint firstItem="hbn-OF-U58" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NmC-YS-zvo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hbn-OF-U58" secondAttribute="trailing" id="R7j-m3-CGS"/>
+                            <constraint firstItem="hbn-OF-U58" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="XNO-JW-qaJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4lN-Rc-1fh" secondAttribute="trailing" constant="20" id="XQt-6e-2Wi"/>
+                            <constraint firstItem="6xR-Gz-qUx" firstAttribute="top" secondItem="4lN-Rc-1fh" secondAttribute="bottom" constant="10" id="etB-81-DZb"/>
+                            <constraint firstItem="t3l-76-F7X" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="l4H-WU-JQW"/>
+                            <constraint firstItem="t3l-76-F7X" firstAttribute="leading" secondItem="Q1g-aj-254" secondAttribute="leading" constant="20" id="leb-Ye-GGw"/>
+                            <constraint firstItem="t3l-76-F7X" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="oq7-VY-da8"/>
+                            <constraint firstItem="TxS-uQ-JCc" firstAttribute="centerY" secondItem="t3l-76-F7X" secondAttribute="centerY" id="pxG-XD-6fJ"/>
+                            <constraint firstItem="TxS-uQ-JCc" firstAttribute="centerX" secondItem="t3l-76-F7X" secondAttribute="centerX" id="sxe-bh-dLQ"/>
+                            <constraint firstItem="4lN-Rc-1fh" firstAttribute="top" secondItem="hbn-OF-U58" secondAttribute="bottom" constant="40" id="v53-uY-A8L"/>
+                            <constraint firstItem="t3l-76-F7X" firstAttribute="trailing" secondItem="Q1g-aj-254" secondAttribute="trailing" constant="-20" id="y7S-WC-lbm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circularSlider" destination="Q1g-aj-254" id="lRj-Je-Tdt"/>
+                        <outlet property="descriptionLabel" destination="6xR-Gz-qUx" id="5v8-P5-r7a"/>
+                        <outlet property="indicatorView" destination="t3l-76-F7X" id="3i1-ky-LmB"/>
+                        <outlet property="lastSeenDateLabel" destination="nQI-Nf-dyJ" id="OeB-kK-fbk"/>
+                        <outlet property="nameLabel" destination="wXD-21-uAV" id="NmQ-L4-FKT"/>
+                        <outlet property="phoneImageView" destination="TxS-uQ-JCc" id="yD8-BK-HCv"/>
+                        <outlet property="statusLabel" destination="4lN-Rc-1fh" id="4Wy-Sg-3If"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <image name="iphone.gen1.radiowaves.left.and.right.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="Black700">
+            <color red="0.086999997496604919" green="0.086999997496604919" blue="0.086999997496604919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Error">
+            <color red="1" green="0.4779999852180481" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Success">
+            <color red="0.0" green="0.74500000476837158" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White700">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="0.95300000905990601" green="0.9570000171661377" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

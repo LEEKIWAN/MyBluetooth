@@ -87,34 +87,24 @@ extension BluetoothManager: CBCentralManagerDelegate {
         print("[MainController > 블루투스 스캔 [UUID] : \(String(peripheral.identifier.uuidString))]")
         print("[MainController > 블루투스 스캔 [RSSI] : \(String(RSSI.intValue))]")
         print("[MainController > 블루투스 스캔 [NAME] : \(String(peripheral.name ?? ""))]")
-        print("===============================")
-        
-        
         
         
         var device = Device(uuid: peripheral.identifier.uuidString, rssi: RSSI.intValue, name: name, lastSeenDate: Date())
-
-        if let txPower = advertisementData[CBAdvertisementDataTxPowerLevelKey] as? Double{
-            device.distance = distance(txPower: txPower, rssi: RSSI.intValue)
-        } else {
-            device.distance = distance(rssi: RSSI.intValue)
-        }
+        device.distance = distance(rssi: RSSI.intValue)
         
-        
+        print("[MainController > 블루투스 스캔 [Distnace] : \(String(device.distance ?? 0))]")
+        print("===============================")
         notifiy?(device)
         
         
     }
     
-    func distance(txPower: Double = -59, rssi: Int) -> Double {
-        let ratio = Double(exactly:rssi)!/Double(txPower)
-        if ratio < 1.0{
-            return pow(10.0, ratio)
-        } else {
-            let accuracy = 0.89976 * pow(ratio, 7.7095) + 0.111
-            return accuracy
-        }
     
+    func distance(txPower: Double = -59, rssi: Int) -> Double {
+        let distnace = pow(10, ((txPower - Double(truncating: NSNumber(value: rssi))) / 20))
+        let digit: Double = pow(10, 1)
+        let floored = floor(distnace * digit) / digit
+        return floored
     }
 }
 

@@ -10,10 +10,11 @@ import UIKit
 extension UIColor {
     
     // MARK: -
-//    static let success = UIColor(named: "Success")!
-//    static let warning = UIColor(named: "Warning")!
-//    static let error = UIColor(named: "Error")!
-//    static let information = UIColor(named: "Information")!
+    static let success = UIColor(named: "Success")!
+    static let warning = UIColor(named: "Warning")!
+    static let good = UIColor(named: "good")!
+    static let error = UIColor(named: "Error")!
+    static let information = UIColor(named: "Information")!
     
     // MARK: - Ground
     static let space = UIColor(named: "Space")!

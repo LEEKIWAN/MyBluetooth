@@ -41,7 +41,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAF-ek-KOq">
-                                <rect key="frame" x="60" y="16.666666666666668" width="253" height="15.666666666666668"/>
+                                <rect key="frame" x="60" y="16.666666666666668" width="34" height="15.666666666666668"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                 <color key="textColor" name="White700"/>
                                 <nil key="highlightedColor"/>
@@ -68,18 +68,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUz-Ub-J91">
+                                <rect key="frame" x="284" y="22.666666666666671" width="39" height="22"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="4" maxX="5" maxY="4"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ㅇㅇㅇ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="Black700"/>
                         <constraints>
                             <constraint firstItem="mNp-Z3-Cmy" firstAttribute="centerY" secondItem="CHV-hk-8GH" secondAttribute="centerY" id="4vB-ep-oCF"/>
                             <constraint firstItem="6CT-xi-Hxf" firstAttribute="centerY" secondItem="CHV-hk-8GH" secondAttribute="centerY" id="8L4-Uf-Z1L"/>
-                            <constraint firstItem="6CT-xi-Hxf" firstAttribute="leading" secondItem="hAF-ek-KOq" secondAttribute="trailing" constant="10" id="9VQ-Ly-Jk3"/>
+                            <constraint firstItem="TUz-Ub-J91" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hAF-ek-KOq" secondAttribute="trailing" constant="10" id="Bqc-Ah-5af"/>
                             <constraint firstItem="St2-ps-PAv" firstAttribute="leading" secondItem="mNp-Z3-Cmy" secondAttribute="trailing" constant="10" id="JJI-n4-1Ul"/>
                             <constraint firstItem="hAF-ek-KOq" firstAttribute="leading" secondItem="mNp-Z3-Cmy" secondAttribute="trailing" constant="10" id="KFc-gQ-wcI"/>
                             <constraint firstItem="St2-ps-PAv" firstAttribute="bottom" secondItem="sJL-tg-xKa" secondAttribute="bottom" constant="-3" id="KI5-B1-RML"/>
+                            <constraint firstItem="6CT-xi-Hxf" firstAttribute="leading" secondItem="TUz-Ub-J91" secondAttribute="trailing" id="QJb-n2-h8Q"/>
                             <constraint firstItem="hAF-ek-KOq" firstAttribute="top" secondItem="sJL-tg-xKa" secondAttribute="top" constant="3" id="Rba-3V-Vp6"/>
                             <constraint firstAttribute="trailing" secondItem="6CT-xi-Hxf" secondAttribute="trailing" id="WaX-aO-eaM"/>
                             <constraint firstItem="mNp-Z3-Cmy" firstAttribute="leading" secondItem="CHV-hk-8GH" secondAttribute="leading" constant="10" id="cTO-NA-faM"/>
+                            <constraint firstItem="TUz-Ub-J91" firstAttribute="centerY" secondItem="CHV-hk-8GH" secondAttribute="centerY" id="jBI-rD-aft"/>
+                            <constraint firstItem="TUz-Ub-J91" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="St2-ps-PAv" secondAttribute="trailing" constant="10" id="qG5-Nm-WfQ"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -95,6 +108,7 @@
             <connections>
                 <outlet property="containerView" destination="CHV-hk-8GH" id="ZNa-NQ-InX"/>
                 <outlet property="deviceImageView" destination="sJL-tg-xKa" id="sMo-87-TeV"/>
+                <outlet property="distanceButton" destination="TUz-Ub-J91" id="876-eG-BZg"/>
                 <outlet property="lastSeenDateLabel" destination="St2-ps-PAv" id="Mpl-IN-Z2P"/>
                 <outlet property="nameLabel" destination="hAF-ek-KOq" id="hYP-l5-Auq"/>
             </connections>
@@ -111,6 +125,9 @@
         </namedColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

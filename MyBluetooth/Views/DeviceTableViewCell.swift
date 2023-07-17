@@ -56,7 +56,9 @@ class DeviceTableViewCell: UITableViewCell {
         nameLabel.text = device.name
         
         lastSeenDateLabel.text = dateFormatter.string(from: device.lastSeenDate)
-        deviceImageView.image = UIImage(systemName: "laptopcomputer")
+        
+        
+        deviceImageView.image = AppUtils.deviceImage(device.name)
         
         favoriteButton.isSelected = device.isRegistered
         

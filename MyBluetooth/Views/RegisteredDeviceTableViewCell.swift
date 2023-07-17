@@ -21,11 +21,13 @@ class RegisteredDeviceTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var lastSeenDateLabel: UILabel!
     @IBOutlet weak var deviceImageView: UIImageView!
-        
+    @IBOutlet weak var distanceButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         containerView.layer.cornerRadius = 10
+        distanceButton.layer.cornerRadius = 4
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -40,10 +42,18 @@ class RegisteredDeviceTableViewCell: UITableViewCell {
         nameLabel.text = device.name
         
         lastSeenDateLabel.text = device.lastSeenDate.timeAgoDisplay()
-        deviceImageView.image = UIImage(systemName: "laptopcomputer")
         
+
+        
+        deviceImageView.image = AppUtils.deviceImage(device.name)
+        
+        distanceButton.setTitle("\(device.distance ?? 0)m", for: .normal)
+        
+//        distanceButton.setTitle("\(device.rssi)", for: .normal)
         
     }
     
     
 }
+
+

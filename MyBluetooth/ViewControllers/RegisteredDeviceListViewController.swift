@@ -96,7 +96,12 @@ extension RegisteredDeviceListViewController: UITableViewDataSource, UITableView
         cell.device = devices[indexPath.row]
     
         return cell
-        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DeviceDetailViewController.instantiate()
+        vc.device = devices[indexPath.row]
+        tabBarController?.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
