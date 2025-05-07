@@ -23,6 +23,9 @@ class AppUtils {
         else if name.range(of: "phone", options: .caseInsensitive) != nil || name.range(of: "galaxy", options: .caseInsensitive) != nil {
             return UIImage(systemName: "apps.iphone")!
         }
+        else if name.range(of: "pad", options: .caseInsensitive) != nil || name.range(of: "tab", options: .caseInsensitive) != nil {
+            return UIImage(systemName: "ipad")!
+        }
         else if name.range(of: "tv", options: .caseInsensitive) != nil {
             return UIImage(systemName: "tv")!
         }
