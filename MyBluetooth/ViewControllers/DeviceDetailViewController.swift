@@ -27,6 +27,7 @@ class DeviceDetailViewController: UIViewController {
     @IBOutlet weak var indicatorView: NVActivityIndicatorView!
     @IBOutlet weak var circularSlider: MTCircularSlider!
     
+    @IBOutlet weak var estimateDistanceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,25 +83,26 @@ class DeviceDetailViewController: UIViewController {
             statusLabel.text = "가까이 있습니다"
             descriptionLabel.text = "근처에서 찾아보세요"
             circularSlider.minTrackTint = .success
-            
+            estimateDistanceLabel.textColor = .success
         } else if rssi > -70 && rssi <= -50 {
             statusLabel.text = "여기 어딘가에 있습니다."
             descriptionLabel.text = "인접한 지역을 찾아보세요"
             circularSlider.minTrackTint = .good
-        } else if rssi > -80 && rssi <= -70 {
-            statusLabel.text = "여기 어딘가에 있습니다."
-            descriptionLabel.text = "인접한 방을 찾아보세요"
-            circularSlider.minTrackTint = .yellow
-        } else if rssi > -90 && rssi <= -80 {
+            estimateDistanceLabel.textColor = .good
+        } else if rssi > -90 && rssi <= -70 {
             statusLabel.text = "멀리 있습니다."
             descriptionLabel.text = "주변을 걸어다녀보세요"
             circularSlider.minTrackTint = .error
+            estimateDistanceLabel.textColor = .error
         } else if rssi < -90 {
-            statusLabel.text = "멀리 있습니다"
-            descriptionLabel.text = "주변을 걸어다녀보세요"
+            statusLabel.text = "신호가 약합니다."
+            descriptionLabel.text = "걸어다녀보세요"
             circularSlider.minTrackTint = .red
+            estimateDistanceLabel.textColor = .red
         }
         
+        
+        estimateDistanceLabel.text = "Estimate Distance: \(BluetoothManager.shared.distance(rssi: rssi))m"
         circularSlider.value = 1
         
     }

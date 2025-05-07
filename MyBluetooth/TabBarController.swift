@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarController: UIView {
+class TabBarController: UITabBarController {
 
     /*
     // Only override draw() if you perform custom drawing.

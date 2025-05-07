@@ -26,9 +26,19 @@ class AppUtils {
         else if name.range(of: "tv", options: .caseInsensitive) != nil {
             return UIImage(systemName: "tv")!
         }
-        else if name.range(of: "watch", options: .caseInsensitive) != nil {
+        else if name.range(of: "watch", options: .caseInsensitive) != nil || name.range(of: "versa", options: .caseInsensitive) != nil {
             return UIImage(systemName: "applewatch")!
-        }                
+        }
+        else if name.range(of: "pen", options: .caseInsensitive) != nil || name.range(of: "pencil", options: .caseInsensitive) != nil  {
+            return UIImage(systemName: "pencil")!
+        }
+        else if name.range(of: "mini", options: .caseInsensitive) != nil {
+            return UIImage(systemName: "macmini")!
+        }
+        else if name.range(of: "studio", options: .caseInsensitive) != nil {
+            return UIImage(systemName: "macstudio")!
+        }
+        
         else {
             return UIImage(systemName: "laptopcomputer")!
         }

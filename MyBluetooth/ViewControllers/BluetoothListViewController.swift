@@ -44,7 +44,6 @@ class BluetoothListViewController: UIViewController {
         indicatorView.color = .black700
         indicatorView.type = .ballScaleRippleMultiple
         indicatorView.startAnimating()
-        manager.checkBluePermission()
         
     }
     

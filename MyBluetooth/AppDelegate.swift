@@ -10,12 +10,14 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let manager = BluetoothManager.shared
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         UIApplication.shared.publicThemeColors()
+        
+        manager.checkBluePermission()
         
         return true
     }
