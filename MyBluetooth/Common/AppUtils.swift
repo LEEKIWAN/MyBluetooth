@@ -14,7 +14,7 @@ class AppUtils {
         
         if name.range(of: "airpod", options: .caseInsensitive) != nil || name.range(of: "buds", options: .caseInsensitive) != nil {
             
-            if name.range(of: "max", options: .caseInsensitive) != nil {
+            if name.range(of: "max", options: .caseInsensitive) != nil || name.range(of: "headpon", options: .caseInsensitive) != nil {
                 return UIImage(systemName: "airpodsmax")!
             }
             

@@ -73,6 +73,8 @@
 		8376FEF32A6126EF00BB90A3 /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376FEF22A6126EF00BB90A3 /* DeviceDetailViewController.swift */; };
 		8376FEF52A6126F300BB90A3 /* DeviceDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8376FEF42A6126F300BB90A3 /* DeviceDetailViewController.storyboard */; };
 		8383A66B2DCB96C5002CA338 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 8383A66A2DCB96C5002CA338 /* GoogleMobileAds */; };
+		8383A66E2DCBA370002CA338 /* NoAuthorizedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8383A66D2DCBA370002CA338 /* NoAuthorizedView.xib */; };
+		8383A6702DCBA375002CA338 /* NoAuthorizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383A66F2DCBA375002CA338 /* NoAuthorizedView.swift */; };
 		839032432A613AFA00F5F5AE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839032422A613AFA00F5F5AE /* Coordinator.swift */; };
 		839032452A613BCB00F5F5AE /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839032442A613BCB00F5F5AE /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
@@ -144,6 +146,8 @@
 		8376FEF02A610BAB00BB90A3 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		8376FEF22A6126EF00BB90A3 /* DeviceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewController.swift; sourceTree = "<group>"; };
 		8376FEF42A6126F300BB90A3 /* DeviceDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceDetailViewController.storyboard; sourceTree = "<group>"; };
+		8383A66D2DCBA370002CA338 /* NoAuthorizedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoAuthorizedView.xib; sourceTree = "<group>"; };
+		8383A66F2DCBA375002CA338 /* NoAuthorizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAuthorizedView.swift; sourceTree = "<group>"; };
 		839032422A613AFA00F5F5AE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		839032442A613BCB00F5F5AE /* UIViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +189,8 @@
 				836001A52A5FF4CD0007F277 /* DeviceTableViewCell.swift */,
 				8376FEED2A60F8D600BB90A3 /* RegisteredDeviceTableViewCell.xib */,
 				8376FEEC2A60F8D600BB90A3 /* RegisteredDeviceTableViewCell.swift */,
+				8383A66D2DCBA370002CA338 /* NoAuthorizedView.xib */,
+				8383A66F2DCBA375002CA338 /* NoAuthorizedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 				836001812A5FD2510007F277 /* Assets.xcassets in Resources */,
 				8360019D2A5FEE500007F277 /* TabBarController.storyboard in Resources */,
 				8376FEEF2A60F8D600BB90A3 /* RegisteredDeviceTableViewCell.xib in Resources */,
+				8383A66E2DCBA370002CA338 /* NoAuthorizedView.xib in Resources */,
 				8360017F2A5FD24F0007F277 /* BluetoothListViewController.storyboard in Resources */,
 				836001A82A5FF4CD0007F277 /* DeviceTableViewCell.xib in Resources */,
 				8376FEF52A6126F300BB90A3 /* DeviceDetailViewController.storyboard in Resources */,
@@ -451,6 +458,7 @@
 				8376FEF32A6126EF00BB90A3 /* DeviceDetailViewController.swift in Sources */,
 				8376FEC72A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
 				8376FEDF2A60E96A00BB90A3 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				8383A6702DCBA375002CA338 /* NoAuthorizedView.swift in Sources */,
 				8376FEE52A60E96A00BB90A3 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
 				831ED1212A614CE5006A1D89 /* AppUtils.swift in Sources */,
 				836001A72A5FF4CD0007F277 /* DeviceTableViewCell.swift in Sources */,
